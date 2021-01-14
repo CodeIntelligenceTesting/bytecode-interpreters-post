@@ -1,0 +1,8 @@
+{
+  "name": "pigletvm_socket_test-23cf275c",
+  "displayName": "pigletvm_socket_test",
+  "cSocket": {
+    "portNumber": 80,
+    "targetLibrary": "./libFuzzCIpigletvm.so"
+  }
+}

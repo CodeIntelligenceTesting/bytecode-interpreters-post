@@ -1,0 +1,13 @@
+{
+  "name": "API_fuzz_test-8c898f8e",
+  "displayName": "API fuzz test",
+  "buildFlags": [
+    "-I /home/fuzzy/Desktop/bytecode-interpreters-post/",
+    "pigletvm.c"
+  ],
+  "cApi": {
+    "api": {
+      "relativePath": ".code-intelligence/fuzz_targets/API_fuzz_test.cpp"
+    }
+  }
+}

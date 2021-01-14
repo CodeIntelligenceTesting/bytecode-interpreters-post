@@ -1,0 +1,23 @@
+{
+  "name": "pigletvm_test-d079c913",
+  "displayName": "pigletvm_test",
+  "maxRunTime": "1800s",
+  "fuzzTargets": [
+    "pigletvm_test-6ecc112b"
+  ],
+  "fuzzerRunConfigurations": [
+    {
+      "engine": "LIBFUZZER",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1
+    },
+    {
+      "engine": "LIBFUZZER",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1,
+      "engineArguments": [
+        "-use_value_profile=1"
+      ]
+    }
+  ]
+}

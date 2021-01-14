@@ -1,0 +1,11 @@
+{
+  "name": "pigletvm_test-6ecc112b",
+  "displayName": "pigletvm_test",
+  "runArguments": [
+    "@@"
+  ],
+  "cSocket": {
+    "portNumber": 80,
+    "targetLibrary": "./libFuzzCIpigletvm.so"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "API_fuzz_test-48a4d64e",
+  "displayName": "API fuzz test",
+  "maxRunTime": "1800s",
+  "fuzzTargets": [
+    "API_fuzz_test-8c898f8e"
+  ],
+  "fuzzerRunConfigurations": [
+    {
+      "engine": "LIBFUZZER",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1
+    },
+    {
+      "engine": "LIBFUZZER",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1,
+      "engineArguments": [
+        "-use_value_profile=1"
+      ]
+    },
+    {
+      "engine": "AFL",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1
+    }
+  ]
+}

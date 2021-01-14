@@ -1,0 +1,17 @@
+{
+  "name": "projects/bytecode-interpreters-post-6eebbbb6",
+  "displayName": "bytecode-interpreters-post",
+  "buildScriptContent": "make -j$(nproc)",
+  "details": {
+    "buildSystem": "MAKE"
+  },
+  "projectEnvironment": {
+    "dockerBuild": {
+
+    },
+    "dockerRun": {
+
+    }
+  },
+  "testScriptContent": "make test -j$(nproc)"
+}

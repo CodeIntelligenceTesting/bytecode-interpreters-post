@@ -1,0 +1,23 @@
+{
+  "name": "pigletvm_socket_test-b4f74da6",
+  "displayName": "pigletvm_socket_test",
+  "maxRunTime": "1800s",
+  "fuzzTargets": [
+    "pigletvm_socket_test-23cf275c"
+  ],
+  "fuzzerRunConfigurations": [
+    {
+      "engine": "LIBFUZZER",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1
+    },
+    {
+      "engine": "LIBFUZZER",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1,
+      "engineArguments": [
+        "-use_value_profile=1"
+      ]
+    }
+  ]
+}
