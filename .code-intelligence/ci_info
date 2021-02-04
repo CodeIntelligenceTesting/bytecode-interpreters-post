@@ -1,17 +1,16 @@
 {
   "name": "projects/bytecode-interpreters-post-6eebbbb6",
   "displayName": "bytecode-interpreters-post",
-  "buildScriptContent": "make -j$(nproc)",
+  "buildScriptContent": "make clean\nmake -j$(nproc)",
   "details": {
     "buildSystem": "MAKE"
   },
   "projectEnvironment": {
     "dockerBuild": {
-
+      "name": "gcr.io/code-intelligence/builders:zint"
     },
     "dockerRun": {
-
+      "name": "gcr.io/code-intelligence/builders:zint"
     }
-  },
-  "testScriptContent": "make test -j$(nproc)"
+  }
 }

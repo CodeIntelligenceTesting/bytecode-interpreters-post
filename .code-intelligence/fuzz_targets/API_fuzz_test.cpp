@@ -2,17 +2,7 @@
 #include <stdint.h>
 #include <stdio.h>
 
-#include "../../pigletvm.h"
-
-
-
-// extern "C" int FUZZ_INIT_WITH_ARGS(int *argc, char ***argv) {
-extern "C" int FUZZ_INIT() {
-
-  // Add global setup code here - called once before fuzzing starts
-
-  return 0; // Non-zero return values are reserved for future use.
-}
+#include "pigletvm.h"
 
 extern "C" int FUZZ(uint8_t *Data, size_t Size) {
 

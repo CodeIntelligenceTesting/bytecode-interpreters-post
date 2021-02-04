@@ -2,7 +2,7 @@
   "name": "API_fuzz_test-8c898f8e",
   "displayName": "API fuzz test",
   "buildFlags": [
-    "-I /home/fuzzy/Desktop/bytecode-interpreters-post/",
+    "-I.",
     "pigletvm.c"
   ],
   "cApi": {
